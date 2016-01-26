@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.example.mydome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 自定义命名空间xmlns:dslv="http://schemas.android.com/apk/res/com.example.mydome"
+     	   由属性前缀名="http://schemas.android.com/apk/res/布局所在程序包名"-->
+     	   
+    <com.mobeta.android.dslv.DragSortListView 
+        android:id="@+id/dslistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:click_remove_id="@id/drag_remove"
+        dslv:drag_enabled="true"
+        dslv:collapsed_height="1px"
+        dslv:float_alpha="0.6"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3">
+    </com.mobeta.android.dslv.DragSortListView>
+    <!-- drag_handle_id属性的值为拖动手柄控件的id，click_remove_id属性的值为删除控件的id
+    	 drag_enabled 是否能拖动，-->
+
+</LinearLayout>

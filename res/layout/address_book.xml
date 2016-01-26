@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="12dp" >
+    <TextView 
+        android:id="@+id/address_book_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="A"/>
+    
+     <TextView 
+        android:id="@+id/address_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_book_letter"
+        android:textSize="18sp"
+        android:text="A"/>
+     
+     <TextView 
+        android:id="@+id/address_book_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_book_letter"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:textSize="18sp"
+        android:text="1567709****"/>
+     
+    
+
+</RelativeLayout>

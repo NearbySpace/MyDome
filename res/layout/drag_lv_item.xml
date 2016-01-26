@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <!-- 手柄 -->
+    <ImageView 
+        android:id="@+id/drag_handle"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:background="@color/blue"/>
+    <TextView 
+        android:id="@+id/drag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/drag_handle"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"
+        android:text="drag"/>
+    <!-- 点击删除 -->
+    <ImageView 
+        android:id="@+id/drag_remove"
+        android:layout_width="62dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/multiple_delete_n"/>
+    
+
+</RelativeLayout>

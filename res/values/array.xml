@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="classifyName">
+        <item>ListView</item>
+        <item>文件操作</item>
+        <item>信息类</item>
+        <item>弹出窗体</item>
+        <item>手写签名</item>
+        <item>更换头像</item>
+        <item>多媒体</item>
+        <item>Animator</item>
+    </string-array>
+    
+    <string-array name="includeContent">
+        <item>ListView的展示，ListView的载入动画</item>
+        <item>创建文件夹</item>
+        <item>notification,推送等</item>
+        <item>toast，自定义对话框等</item>
+        <item>涂鸦(手写签名)</item>
+        <item>如：更换用户头像</item>
+        <item>音频波形</item>
+        <item>动画</item>
+    </string-array>
+    
+</resources>

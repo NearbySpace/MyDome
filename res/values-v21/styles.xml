@@ -1,0 +1,20 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    
+    
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="colorPrimary">#00ffff</item>
+        <item name="colorPrimaryDark">#ff8800</item>
+        <item name="colorAccent">#00ffff</item>
+        <item name="android:windowBackground">@android:color/holo_orange_light</item>
+       <!--  <item name="android:windowBackground">#00ffff</item> -->
+       
+    </style>
+
+</resources>
