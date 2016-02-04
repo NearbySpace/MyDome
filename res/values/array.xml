@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
     <string-array name="classifyName">
         <item>ListView</item>
         <item>文件操作</item>
@@ -9,6 +10,7 @@
         <item>更换头像</item>
         <item>多媒体</item>
         <item>Animator</item>
+        <item>IM</item>
     </string-array>
     
     <string-array name="includeContent">
@@ -20,6 +22,7 @@
         <item>如：更换用户头像</item>
         <item>音频波形</item>
         <item>动画</item>
+        <item>聊天</item>
     </string-array>
     
 </resources>

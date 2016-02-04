@@ -41,6 +41,8 @@
         <activity android:name="com.example.mydome.animator.AnimatorClassify"/>
         <activity android:name="com.example.mydome.listView.DragListView"/>
         <activity android:name="com.example.mydome.listView.LetterSortListView"/>
+        <activity android:name="com.example.mydome.IM.ChatActivity"
+            	  android:windowSoftInputMode="stateUnchanged"/>
     </application>
 
 </manifest>

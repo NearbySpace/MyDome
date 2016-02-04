@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/input_expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_expression" />
+
+            <EditText
+                android:id="@+id/input_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/input_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_background"
+                android:text="@string/send" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/chat_expression_vp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" 
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"/>
+        <LinearLayout 
+            android:id="@+id/chat_expression_ll_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <ImageView 
+                android:id="@+id/chat_expression_ll_point_one"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/point_black"/>
+            <ImageView 
+                android:id="@+id/chat_expression_ll_point_two"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/point_light"/>
+            <ImageView 
+                android:id="@+id/chat_expression_ll_point_three"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/point_light"/>
+            <ImageView 
+                android:id="@+id/chat_expression_ll_point_four"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/point_light"/>
+            <ImageView 
+                android:id="@+id/chat_expression_ll_point_five"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/point_light"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input_ll"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

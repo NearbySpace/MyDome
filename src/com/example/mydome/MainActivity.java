@@ -14,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
+import com.example.mydome.IM.ChatActivity;
 import com.example.mydome.adapter.MyAdapter;
 import com.example.mydome.animator.AnimatorClassify;
 import com.example.mydome.changeImage.ChangeUserIcon;
@@ -33,8 +34,8 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		//设置状态栏与页面拥有共同背景
-//		if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {//版本大于lollipop（5.0）才可以实现
+		//璁剧疆鐘舵�佹爮涓庨〉闈㈡嫢鏈夊叡鍚岃儗鏅�
+//		if (VERSION.SDK_INT >= VERSION_CODES.LOLLIPOP) {//鐗堟湰澶т簬lollipop锛�5.0锛夋墠鍙互瀹炵幇
 //			Window window = getWindow();
 //			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
 //					| WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
@@ -92,7 +93,9 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		case 7:
 			intent.setClass(this, AnimatorClassify.class);
 			break;
-			
+		case 8:
+			intent.setClass(this, ChatActivity.class);
+			break;
 		default:
 			return;
 		}
